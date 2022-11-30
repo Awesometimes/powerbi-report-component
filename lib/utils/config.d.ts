@@ -1,0 +1,10 @@
+import { ReportProps, DashboardProps, TileProps, IError, Config, ReportVisualProps } from '../types';
+declare const createReportConfig: (props: ReportProps) => Config;
+declare const createDashboardConfig: (props: DashboardProps) => Config;
+declare const createTileConfig: (props: TileProps) => Config;
+declare const createReportVisualConfig: (props: ReportVisualProps) => Config;
+declare const validateConfig: (config: any) => IError[];
+declare const validateBootrapConfig: (config: any) => boolean;
+declare const createEmbedConfigBasedOnEmbedType: (config: any) => Config;
+declare const parseConfigErrors: (errors: IError[]) => string;
+export { validateConfig, createReportConfig, createDashboardConfig, createTileConfig, createEmbedConfigBasedOnEmbedType, parseConfigErrors, createReportVisualConfig, validateBootrapConfig };
